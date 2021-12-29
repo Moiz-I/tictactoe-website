@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(237,237,238);
+}
+
+body {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+#board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 400px;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+
+}
+
+#board-grid {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 3px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.square {
+  background-color: #ffb7b7;
+  height: 120px;
+  color: rgb(195, 149, 255);
+  border: none;
+  border-radius: 3px;
+  font-size: 40px;
+  font-family:sans-serif;
+  font-weight: 600;
+}
+
+
+#reset {
+  width: 100%;
+  margin: auto;
+}
+
+#reset-btn {
+  width: 100%;
+  height: 3em;
+  border: none;
+  border-radius: 0% 0% 10px 10px / 10px 10px 10px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  background-color: #3d3d3d;
+  box-shadow: -1px 7px 22px -6px lightgrey;
+  color: rgb(255, 138, 92);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#winner {
+  background-color: #3d3d3d;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 138, 92);
+}
